@@ -1,0 +1,12 @@
+{
+ "theme": {
+  "mode": "light",
+  "light": "Zedokai Light (Filter Sun)",
+  "dark": "Zedokai"
+ },
+ "theme_overrides": {
+  "Zedokai Light (Filter Sun)": {
+   "vim.yank.background": "#FE7F1F"
+  }
+ },
+}
