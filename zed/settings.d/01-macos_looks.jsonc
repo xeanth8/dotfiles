@@ -1,4 +1,9 @@
 {
+ "icon_theme": {
+  "mode": "light",
+  "light": "Zed (Default)",
+  "dark": "Zed (Default)"
+ },
  "theme": {
   "mode": "light",
   "light": "Zedokai Light (Filter Sun)",
@@ -9,4 +14,6 @@
    "vim.yank.background": "#FE7F1F"
   }
  },
+ "ui_font_size": 13.0,
+ "buffer_font_size": 12.0,
 }

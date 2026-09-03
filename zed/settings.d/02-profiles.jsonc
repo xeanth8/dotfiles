@@ -2,13 +2,13 @@
  "profiles": {
   "Large": {
    "settings": {
-    "buffer_font_size": 20.0,
-   },
+    "buffer_font_size": 20.0
+   }
   },
   "PC": {
    "settings": {
-    "buffer_font_size": 13.0,
-   },
-  },
+    "buffer_font_size": 13.0
+   }
+  }
  },
 }

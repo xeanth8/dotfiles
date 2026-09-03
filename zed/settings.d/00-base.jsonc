@@ -1,11 +1,7 @@
 {
+ "colorize_brackets": true,
  "prettier": {
   "parser": ""
- },
- "icon_theme": {
-  "mode": "light",
-  "light": "Zed (Default)",
-  "dark": "Zed (Default)"
  },
  "git": {
   "inline_blame": {
@@ -69,7 +65,14 @@
    "tab_size": 1
   },
   "Python": {
-   "language_servers": ["!basedpyright", "ruff", "ty"]
+   "language_servers": [
+    "!basedpyright",
+    "ruff",
+    "ty"
+   ]
+  },
+  "Markdown": {
+   "show_edit_predictions": false
   }
  },
  "lsp": {
@@ -145,9 +148,14 @@
   "thumb": "always",
   "show": "never"
  },
- "ui_font_size": 13.0,
- "buffer_font_size": 12.0,
  "command_aliases": {
-  "wf": "workspace::FormatAndSave"
+  "wf": "workspace::FormatAndSave",
+  "cit": "editor::ConvertIndentationToTabs",
+  "cis": "editor::ConvertIndentationToSpaces",
+  "w-": "workspace::SaveWithoutFormat",
+  "sw": "editor::ToggleSoftWrap",
+  "pc": "settings_profile_selector::Toggle",
+  "pred": "editor::ToggleEditPrediction",
+  "mid": "workspace::ToggleCenteredLayout"
  },
 }

@@ -1,0 +1,44 @@
+[
+ {
+  "context": "Editor && edit_prediction",
+  "bindings": {
+   "fn-tab": "editor::AcceptEditPrediction"
+  }
+ },
+ {
+  "context": "Editor && edit_prediction",
+  "unbind": {
+   "alt-tab": "editor::AcceptEditPrediction"
+  }
+ },
+ {
+  "context": "RatePredictionsModal > Editor",
+  "unbind": {
+   "cmd-shift-enter": "zeta::ThumbsUpActivePrediction"
+  }
+ },
+ {
+  "context": "RatePredictionsModal",
+  "unbind": {
+   "cmd-shift-enter": "zeta::ThumbsUpActivePrediction"
+  }
+ },
+ {
+  "context": "RatePredictionsModal > Editor",
+  "unbind": {
+   "cmd-shift-backspace": "zeta::ThumbsDownActivePrediction"
+  }
+ },
+ {
+  "context": "RatePredictionsModal",
+  "unbind": {
+   "cmd-shift-backspace": "zeta::ThumbsDownActivePrediction"
+  }
+ },
+ {
+  "context": "Editor && edit_prediction && edit_prediction_mode == eager && !showing_completions",
+  "unbind": {
+   "tab": "editor::AcceptEditPrediction"
+  }
+ },
+]

@@ -1,0 +1,176 @@
+[
+ {
+  "context": "Workspace",
+  "bindings": {}
+ },
+ {
+  "context": "Editor && vim_mode == insert",
+  "bindings": {
+   "j k": "vim::SwitchToNormalMode"
+  }
+ },
+ {
+  "context": "OutlinePanel && not_editing",
+  "bindings": {
+   "ctrl-1": "editor::ToggleFocus"
+  }
+ },
+ {
+  "context": "vim_mode == visual",
+  "bindings": {
+   "shift-s": [
+    "vim::PushAddSurrounds",
+    {}
+   ]
+  }
+ },
+ {
+  "context": "(vim_mode == normal || vim_mode == visual)",
+  "bindings": {
+   "space s n": "vim::PushSneak",
+   "space s N": "vim::PushSneakBackward"
+  }
+ },
+ {
+  "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+  "bindings": {
+   "space .": "editor::ToggleCodeActions",
+   "space c r": "editor::Rename",
+   "g D": "editor::GoToDefinitionSplit",
+   "g t": "editor::GoToTypeDefinition",
+   "g p": [
+    "workspace::SendKeystrokes",
+    "` [ v ` ]"
+   ],
+   "g P": [
+    "workspace::SendKeystrokes",
+    "` [ V ` ]"
+   ],
+   "g ctrl-p": [
+    "workspace::SendKeystrokes",
+    "` [ ctrl-v ` ]"
+   ]
+  }
+ },
+ {
+  "context": "!Editor && !Terminal",
+  "bindings": {
+   "space g e": "git_panel::ToggleFocus",
+   "space g s": "git::ViewStagedChanges",
+   "space g S": "git::ViewUnstagedChanges",
+   "space e": "project_panel::ToggleFocus",
+   "space tab": "tab_switcher::Toggle",
+   "space t": "tab_switcher::Toggle",
+   "space s t": "pane::ReopenClosedItem",
+   "space shift-t": "tab_switcher::ToggleAll"
+  }
+ },
+ {
+  "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
+  "bindings": {
+   "backspace": "pane::GoBack",
+   "enter": "pane::GoForward",
+   "shift-backspace": "pane::GoToOlderTag",
+   "shift-enter": "pane::GoToNewerTag",
+   "space g h d": "editor::ToggleSelectedDiffHunks",
+   "space g e": "git_panel::ToggleFocus",
+   "space g s": "git::ViewStagedChanges",
+   "space g S": "git::ViewUnstagedChanges",
+   "space g b": "git::Branch",
+   "space e": "project_panel::ToggleFocus",
+   "space s w": "pane::DeploySearch",
+   "space s s": "project_symbols::Toggle",
+   "space tab": "tab_switcher::Toggle",
+   "space t": "tab_switcher::Toggle",
+   "space s t": "pane::ReopenClosedItem",
+   "space shift-t": "tab_switcher::ToggleAll",
+   "space q": "pane::CloseActiveItem"
+  }
+ },
+ {
+  "context": "VimControl && Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
+  "bindings": {
+   "space f a": "pane::DeploySearch",
+   "space f f": "file_finder::Toggle",
+   "space g h r": "git::Restore",
+   "space g h o": "git::ToggleStaged",
+   "space p c": "settings_profile_selector::Toggle",
+   "space s l": "pane::SplitRight",
+   "space s j": "pane::SplitDown",
+   "space c": "editor::ToggleComments",
+   "m m": "vim::Matching"
+  }
+ },
+ {
+  "context": "Editor && VimControl && (vim_mode == normal || vim_mode == visual) && multibuffer",
+  "bindings": {
+   "space k": "editor::ExpandExcerptsUp"
+  }
+ },
+ {
+  "context": "Editor && VimControl && (vim_mode == normal || vim_mode == visual) && multibuffer",
+  "bindings": {
+   "space j": "editor::ExpandExcerptsDown"
+  }
+ },
+ {
+  "context": "vim_mode == normal || vim_mode == visual || vim_mode == operator",
+  "bindings": {
+   "] shift-x": "vim::SelectNextSyntaxNode"
+  }
+ },
+ {
+  "context": "vim_mode == normal || vim_mode == visual || vim_mode == operator",
+  "bindings": {
+   "[ shift-x": "vim::SelectPreviousSyntaxNode"
+  }
+ },
+ {
+  "context": "VimControl && !menu",
+  "unbind": {
+   "shift-h": "vim::WindowTop",
+   "shift-l": "vim::WindowBottom"
+  }
+ },
+ {
+  "context": "VimControl && !menu",
+  "bindings": {
+   "shift-h": "vim::FirstNonWhitespace",
+   "shift-l": "vim::EndOfLine",
+   "space shift-h": "vim::WindowTop",
+   "space shift-l": "vim::WindowBottom"
+  }
+ },
+ {
+  "context": "!Editor && TabSwitcher > Picker",
+  "bindings": {
+   "j": "menu::SelectNext",
+   "k": "menu::SelectPrevious",
+   "l": "menu::Confirm",
+   "h": "menu::Cancel",
+   "tab": "menu::Confirm"
+  }
+ },
+ {
+  "context": "VimControl && !menu",
+  "bindings": {
+   "j": [
+    "vim::Down",
+    {
+     "display_lines": true
+    }
+   ]
+  }
+ },
+ {
+  "context": "VimControl && !menu",
+  "bindings": {
+   "k": [
+    "vim::Up",
+    {
+     "display_lines": true
+    }
+   ]
+  }
+ },
+]
