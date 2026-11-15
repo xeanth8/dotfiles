@@ -148,7 +148,7 @@
    "k": "menu::SelectPrevious",
    "l": "menu::Confirm",
    "h": "menu::Cancel",
-   "tab": "menu::Confirm"
+   "tab": "menu::Confirm",
   }
  },
  {

@@ -1,4 +1,11 @@
 {
+ "show_edit_predictions": false,
+ "proxy": "",
+ "current_line_highlight": "all",
+ "cursor_animation": {
+ },
+ "ui_font_weight": 400.0,
+ "window_title_format": "${remoteName}${separator}${fileName}",
  "colorize_brackets": true,
  "prettier": {
   "parser": ""
@@ -72,6 +79,7 @@
    ]
   },
   "Markdown": {
+   "hard_tabs": false,
    "show_edit_predictions": false
   }
  },
@@ -141,6 +149,7 @@
  },
  "vim_mode": true,
  "terminal": {
+  "font_family": ".ZedMono",
   "max_scroll_history_lines": 10000
  },
  "base_keymap": "VSCode",
@@ -150,12 +159,16 @@
  },
  "command_aliases": {
   "wf": "workspace::FormatAndSave",
-  "cit": "editor::ConvertIndentationToTabs",
-  "cis": "editor::ConvertIndentationToSpaces",
+  "tab": "editor::ConvertIndentationToTabs",
+  "space": "editor::ConvertIndentationToSpaces",
   "w-": "workspace::SaveWithoutFormat",
   "sw": "editor::ToggleSoftWrap",
   "pc": "settings_profile_selector::Toggle",
   "pred": "editor::ToggleEditPrediction",
-  "mid": "workspace::ToggleCenteredLayout"
+  "mid": "workspace::ToggleCenteredLayout",
+  "markside": "markdown::OpenPreviewToTheSide",
+  "add": "workspace::AddFolderToProject",
+  "lang": "language_selector::Toggle",
+  "lng": "language_selector::Toggle",
  },
 }
